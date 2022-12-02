@@ -6,16 +6,18 @@ import Home from './pages';
 import About from './pages/about';
 
 import SignUp from './pages/signup';
+// import Location from './pages/location';
+
 
 function App() {
 return (
 	<Router>
 	<Navbar />
 	<Routes>
-		<Route path='/' exact component={Home} />
-		<Route path='/about' component={About} />
-		
-		<Route path='/sign-up' component={SignUp} />
+		<Route exact path='/' element={<Home />}></Route>
+		<Route exact path='/about'element={<About />}></Route>
+		<Route exact path='/sign-up'element={<SignUp />}></Route>
+		{/* <Route exact path='/location' element={< About />}></Route> */}
 	</Routes>
 	</Router>
 );

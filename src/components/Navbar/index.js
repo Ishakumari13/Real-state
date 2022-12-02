@@ -26,6 +26,7 @@ return (
 			About
 		</NavLink>
 		
+		
 		<NavLink to='/sign-up' activeStyle>
 			Sign Up
 		</NavLink>
