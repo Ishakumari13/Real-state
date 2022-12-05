@@ -2,12 +2,13 @@ import { FaBars } from 'react-icons/fa';
 import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+
 export const Nav = styled.nav`
 background: #63D471;
 height: 85px;
 display: flex;
 justify-content: space-between;
-padding: 0.2rem calc((100vw - 1000px) / 2);
+padding: 0.2rem calc((100vw - 1000px) / 5);
 z-index: 12;
 /* Third Nav */
 /* justify-content: flex-start; */
@@ -18,7 +19,7 @@ color: #808080;
 display: flex;
 align-items: center;
 text-decoration: none;
-padding: 0 1rem;
+padding: 0 5rem;
 height: 100%;
 cursor: pointer;
 &.active {

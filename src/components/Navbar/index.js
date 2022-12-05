@@ -1,4 +1,5 @@
 import React from 'react';
+import Dropdown from 'react-bootstrap/Dropdown';
 import {
 Nav,
 NavLink,
@@ -8,34 +9,57 @@ NavBtn,
 NavBtnLink,
 } from './NavbarElements';
 
+
+
 const Navbar = () => {
 return (
 	<>
 	<Nav>
+        
 		<Bars />
 
 		<NavMenu>
-		<div className='logo'>
+        <div className='logo'>
             <h2>
-                <span>M</span>agic
-                <span>B</span>ricks
+                <span>R</span>eal
+                <span>S</span>tate
             </h2>
 
         </div>
-		<NavLink to='/about' activeStyle>
+
+		<NavLink to='/about' activestyle='true'>
 			About
 		</NavLink>
+		<div>
+		<Dropdown className="d-inline mx-2" autoClose="inside">
+        <Dropdown.Toggle id="dropdown-autoclose-inside">
+          Location
+        </Dropdown.Toggle>
+
+        <Dropdown.Menu>
+		<br/>
+          <Dropdown.Item href="/location">Cities</Dropdown.Item><br/>
+          <Dropdown.Item href="/state">State</Dropdown.Item><br/>
+          {/* <Dropdown.Item href="/about">Kolkata</Dropdown.Item><br/> */}
+        </Dropdown.Menu>
+      </Dropdown>
+		</div>
+
 		
 		
-		<NavLink to='/sign-up' activeStyle>
+		
+		{/* <NavLink to='/sign-up' activestyle='true'>
 			Sign Up
-		</NavLink>
+		</NavLink> */}
 		{/* Second Nav */}
-		{/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
+		
 		</NavMenu>
+
 		<NavBtn>
-		<NavBtnLink to='/signin'>Sign In</NavBtnLink>
+		<NavBtnLink to='/signup'>Register</NavBtnLink>
+		<NavBtnLink to='/login'>Login</NavBtnLink>
 		</NavBtn>
+
 	</Nav>
 	</>
 );

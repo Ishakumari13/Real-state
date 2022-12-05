@@ -1,20 +1,25 @@
-// import Dropdown from 'react-bootstrap/Dropdown';
-// import DropdownButton from 'react-bootstrap/DropdownButton';
+import Dropdown from 'react-bootstrap/Dropdown';
 
-// function location() {
-//   return (
-//     <DropdownButton
-//       align="end"
-//       title="Dropdown end"
-//       id="dropdown-menu-align-end"
-//     >
-//       <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-//       <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-//       <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
-//       <Dropdown.Divider />
-//       <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
-//     </DropdownButton>
-//   );
-// }
+function Location() {
+  return (
+    <>
 
-// export default Location;
+      <Dropdown className="d-inline bg-primary" autoClose="inside">
+        <Dropdown.Toggle id="dropdown-autoclose-inside">
+            Cities
+        </Dropdown.Toggle>
+
+        <Dropdown.Menu>
+          <Dropdown.Item href="/about">Mumbai</Dropdown.Item><br/>
+          <Dropdown.Item href="/about">Chennai</Dropdown.Item><br/>
+          <Dropdown.Item href="/about">Kolkata</Dropdown.Item><br/>
+        </Dropdown.Menu>
+      </Dropdown>
+
+
+      
+    </>
+  );
+}
+
+export default Location;

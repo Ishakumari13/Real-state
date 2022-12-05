@@ -10,7 +10,7 @@ return (
 		height: '100vh'
 	}}
 	>
-	<h1>Welcome to Magic Brick</h1>
+	<h1>Welcome to RealState</h1>
 	</div>
 );
 };
